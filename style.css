@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+iframe {
+  width: 100vw;
+  height: 100vh;
+}
+
+iframe.loading {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
