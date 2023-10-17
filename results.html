@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <title>Results | Iframe test</title>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <div style="padding: 0 16px">
+      <h1><a href="../">/</a> Results</h1>
+
+      <p>Some caveats, the user must have access to the case. And the case must have a dicom and 3d model.</p>
+
+      <form id="token-form" style="display: flex; align-items: flex-start; gap: 16px">
+        <div>
+          <label>HG URL</label>
+          <input type="url" id="hg-url" required />
+          <div>
+            <small>Remove trailing forward slash /</small>
+          </div>
+        </div>
+        <div>
+          <label>API URL</label>
+          <input type="url" id="api-url" required />
+          <div>
+            <small>Remove trailing forward slash /</small>
+          </div>
+        </div>
+        <div>
+          <label>API key</label>
+          <input type="text" id="api-key" required />
+        </div>
+        <div>
+          <label>Email</label>
+          <input type="email" id="email" required />
+        </div>
+        <div>
+          <label>Study ID</label>
+          <input type="text" id="study-id" required />
+        </div>
+        <input type="submit" value="See results" />
+      </form>
+    </div>
+
+    <iframe id="frame" class="loading"></iframe>
+
+    <script src="results.js"></script>
+  </body>
+</html>

@@ -3,35 +3,13 @@
   <title>Iframe test</title>
   <link rel="stylesheet" href="style.css" />
   <body>
-    <h1>Testing</h1>
-
-    <p>Some caveats, the user must have access to the case. And the case must have a dicom and 3d model.</p>
-
-    <form id="token-form">
-      <div class="flex-col">
-        <label>URL</label>
-        <input type="text" id="url" required />
-        <div>
-          <small>Remove trailing forward slash /</small>
-        </div>
-      </div>
-      <div>
-        <label>Study ID</label>
-        <input type="text" id="study-id" required />
-      </div>
-      <div>
-        <label>Refresh Token</label>
-        <input type="text" id="refresh-token" required />
-      </div>
-      <div>
-        <label>Access Token</label>
-        <input type="text" id="access-token" required />
-      </div>
-      <input type="submit" value="Login with explicit tokens" />
-    </form>
-
-    <iframe id="frame" class="loading"></iframe>
-
-    <script src="script.js"></script>
+    <ul>
+      <li>
+        <a href="results.html">For viewing case results</a>
+      </li>
+      <li>
+        <a href="case-create.html">For creating cases</a>
+      </li>
+    </ul>
   </body>
 </html>

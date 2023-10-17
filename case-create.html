@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <title>Create Case | Iframe test</title>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <div style="padding: 0 16px">
+      <h1><a href="../">/</a> Case Create</h1>
+
+      <form id="case-create-form">
+        <div>
+          <label>API URL</label>
+          <input type="url" id="api-url" required />
+          <small>Remove trailing forward slash /</small>
+        </div>
+        <div>
+          <label>API key</label>
+          <input type="text" id="api-key" required />
+        </div>
+        <div style="margin-top: 16px">
+          <label>Devices</label>
+          <input type="text" id="devices" required /> <span>Comma separated</span>
+        </div>
+        <div>
+          <label>Patient identifier</label>
+          <input type="text" id="patient-identifier" required />
+        </div>
+        <div>
+          <label>Patient age</label>
+          <input type="number" min="0" id="patient-age" required />
+        </div>
+        <div>
+          <label>Patient sex</label>
+          <label>
+            <input type="radio" name="patient-sex" value="M" required /> Male
+          </label>
+          <label>
+            <input type="radio" name="patient-sex" value="F" required /> Female
+          </label>
+        </div>
+        <div>
+          <label>Physician comment</label>
+          <input type="text" id="physician-comment" />
+        </div>
+        <div>
+          <label>Organisation ID</label>
+          <input type="text" id="org-id" required />
+        </div>
+        <div>
+          <label>Intervention date time</label>
+          <input type="datetime-local" id="intervention" />
+        </div>
+        <div>
+          <label>Prospective</label>
+          <label>
+            <input type="radio" name="is-prospective" value="true" required /> Is Prospective
+          </label>
+          <label>
+            <input type="radio" name="is-prospective" value="false" required /> Is Retrospective
+          </label>
+        </div>
+        <div>
+          <label>Expected delivery date</label>
+          <input type="datetime-local" id="expected-delivery" required />
+        </div>
+        <input type="submit" value="Create Case" />
+      </form>
+
+      <div id="response" style="margin-top: 16px"></div>
+
+      <script src="case-create.js"></script>
+    </div>
+  </body>
+</html>
+
+
+<!-- deviceIds,
+patientInformation: this.form.patientInformation,
+physicianComment: this.form.physicianComment,
+organisationId: this.selectedOrganisation.id,
+interventionDatetime: this.interventionDatetimeISO,
+isProspective: this.form.isProspective,
+expectedDeliveryDatetime: this.expectedDeliveryDateTimeISO, -->

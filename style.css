@@ -16,9 +16,3 @@ iframe.loading {
 * {
   box-sizing: border-box;
 }
-
-form {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-}
