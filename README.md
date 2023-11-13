@@ -7,3 +7,12 @@ Serve on a simple http server, like [serve](https://yarn.pm/serve) on http://loc
 ## Dependencies
 - Node Environment
 - [Yarn](https://classic.yarnpkg.com/en/)
+
+## Instructions
+```sh
+# Install dependecies
+yarn install
+
+# Open local server
+yarn serve
+```
