@@ -55,7 +55,7 @@ const loginWithExplicitTokens = async e => {
     iframeWin.postMessage({ refresh, access }, target)
     clearTimeout(timeout)
     showIframe()
-  }, 1000)
+  }, 2000)
 }
 
 // Interactions
